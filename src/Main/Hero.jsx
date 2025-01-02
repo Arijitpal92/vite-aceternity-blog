@@ -57,7 +57,7 @@ function Hero() {
       />
       <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0">
         <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 p-5 ">
-          <span className='text-7xl'>Your very own</span> <br /> <span className='top-2'>blog application</span>
+          <span className='text-7xl'>Hi, this is after gift</span> <br /> <span className='top-2'>blog application</span>
          </h1>
         <p className="mt-4 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto">
           Spotlight effect is a great way to draw attention to a specific part
@@ -71,7 +71,7 @@ function Hero() {
       <AnimatedTooltip items={people} />
     </div>
 
-    <div className="flex md:flex-col items-center justify-center mb-10 w-full mt-5 gap-4 font-semibold p-5">
+    <div className="flex md:flex-col items-center justify-center mb-10 w-full mt-5 gap-4 font-semibold ">
        
       <Button />
       <a href="" className='hover:underline text-neutral-200'>Visit our Github</a>
