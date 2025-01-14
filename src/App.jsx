@@ -1,17 +1,38 @@
 import React from 'react'
-import Hero from './Main/Hero'
-import Pricing from './Main/Pricing'
-import Waitlist from './Main/Waitlist'
-import Lamp from './Main/Lamp'
+
+import About from './Main/About'
+import Contact from './Main/Contact'
+import DataFlowProvider from './Context/DataFlow'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <div>This is Home page
+        
+      </div>,
+    },
+    {
+      path: "/about",
+      element: <div>
+        <About />
+        
+
+      </div>,
+    },
+    {
+      path: "/contact",
+      element: <div>
+        <Contact />
+        
+      </div>,
+    },
+  ]);
+
   return (
-    <div>
-      <Hero />
-      <Pricing />
-      <Waitlist />
-     <Lamp />
-    </div>
+    <DataFlowProvider><RouterProvider router={router} /> </DataFlowProvider>
   )
 }
+
 
 export default App
