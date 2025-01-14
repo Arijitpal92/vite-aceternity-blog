@@ -4,6 +4,7 @@ import About from './Main/About'
 import Contact from './Main/Contact'
 import DataFlowProvider from './Context/DataFlow'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { div } from 'framer-motion/client'
 function App() {
   const router = createBrowserRouter([
     {
@@ -30,7 +31,11 @@ function App() {
   ]);
 
   return (
-    <DataFlowProvider><RouterProvider router={router} /> </DataFlowProvider>
+    <div>
+    <DataFlowProvider>
+      <RouterProvider router={router} /> 
+      </DataFlowProvider>
+    </div>
   )
 }
 
